@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <div class="container">
+        <form id="Form1" action="validate-signin.php">
+            <h3>Create Account</h3>
+            <input type="email" placeholder="Email" autocomplete="off" required>
+            <input type="password" placeholder="Password" autocomplete="off" required>
+            <input type="password" placeholder="Confirm Password" autocomplete="off" required>
+            <div class="btn-box">
+                <button type="button" id="Next1">Next</button>
+            </div>
+        </form>
+        <form id="Form2" action="validate-signin.php">
+            <h3>Social Links</h3>
+            <input type="text" placeholder="Medium" autocomplete="off">
+            <input type="text" placeholder="Github" autocomplete="off">
+            <input type="text" placeholder="LinkedIn" autocomplete="off">
+            <div class="btn-box">
+                <button type="button" id="Back1">Prev</button>
+                <button type="button" id="Next2">Next</button>
+            </div>
+        </form>
+        <form id="Form3" action="validate-signin.php">
+            <h3>Personal Info</h3>
+            <input type="text" placeholder="First Name" autocomplete="off" required>
+            <input type="text" placeholder="Last Name" autocomplete="off" required>
+            <input type="number" placeholder="Mobile Number" autocomplete="off" required>
+            <div class="btn-box">
+                <button type="button" id="Back2">Prev</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col">Step-1</div>
+            <div class="step-col">Step-2</div>
+            <div class="step-col">Step-3</div>
+        </div>        
+    </div>
+
+    <script src="/js/register.js"></script>
+</body>
+</html>
