@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-evenly;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/sunset.jpg');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/newyork.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -23,6 +23,11 @@ h1 {
     font-family: 'Pacifico', cursive;
     font-size: 70px;
     font-weight: 100;
+    color: #43C6AC;
+}
+
+p {
+    color: mediumturquoise;
 }
 
 #heading {
@@ -32,46 +37,51 @@ h1 {
     font-size: 9rem;
     font-weight: 700;
     top: 10%;
-    color: #ff7a00;
+    background: linear-gradient(to right, #75e2cc 0%, #00676e 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-.main .registration-enable,
-.main .login-enable {
+.main .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 7%;
-    background-color: blanchedalmond;
     padding: 50px 0;
+    background: rgba(0, 97, 104, 0.2);
+    /* background-color: blanchedalmond; */
+    border: 1px solid rgba(136, 239, 247, 0.3);
     border-radius: 4%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
     line-height: 2;
     width: 30%;
     font-size: 25px;
     transition: all 0.5s ease;
 }
 
-.main .registration-enable:hover,
-.main .login-enable:hover {
+.main .card:hover {
     transform: scale(1.03);
 }
 
 button {
     margin-top: 15px;
     border: none;
-    background-color: #ff7a00;
+    background: linear-gradient(to top right, #10d3ac 0%, #00676e 100%);
     border-radius: 5px;
     padding: 13px 15px;
     transition: all 0.5s ease;
 }
 
 button:hover {
-    background-color: #7c3c00;
+    background: linear-gradient(to top right, #00676e 0%, #10d3ac 100%);
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 button:active {
-    background-color: #7c3c00;
-    transform: scale(0.8);
+    background: linear-gradient(to top right, #10d3ac 0%, #00676e 100%);
+    transform: scale(0.9);
 }
 
 button a {
